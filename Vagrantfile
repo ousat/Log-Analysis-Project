@@ -1,20 +1,18 @@
 # -*- mode: ruby -*-
-vi: set ft=ruby :
+# vi: set ft=ruby :
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  vagrant ALL=(ALL) NOPASSWD:ALL
-  Defaults:vagrant !requiretty
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "bento/ubuntu-16.04-i386"
+  config.vm.box = "hashicorp/precise64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -67,10 +65,10 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    # sudo apt-get install -y apache2
-    sudo apt-get install postgresql
-    sudo apt-get install postgresql-contrib
-    sudo apt-get install python-pip
-    sudo apt-get install python-psycopg2
+    sudo apt-get install -y apache2
+    sudo apt-get install -y postgresql
+    sudo apt-get install -y postgresql-contrib
+    sudo apt-get install -y python-pip
+    sudo apt-get install -y python-psycopg2
   SHELL
 end
