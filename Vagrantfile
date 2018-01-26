@@ -64,11 +64,11 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y apache2
-    apt-get install postgresql
-    apt-get install postgresql-contrib
-    apt-get install python-pip
-    apt-get install python-psycopg2
+    sudo apt-get update
+    # sudo apt-get install -y apache2
+    sudo apt-get install postgresql
+    sudo apt-get install postgresql-contrib
+    sudo apt-get install python-pip
+    sudo apt-get install python-psycopg2
   SHELL
 end
