@@ -22,7 +22,7 @@ This project queries news database, organizes and prints the query results accor
 
 3. run `vagrant up` from command line
 
-4. Download the sql file from [here] (https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) and move it to the project folder.
+4. Download the sql file from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip), extract the file and move it to the project folder.
 
 5. after vagrant set up is complete run `vagrant ssh` and `cd /vagrant folder`.
     **Database setup**
@@ -38,7 +38,7 @@ This project queries news database, organizes and prints the query results accor
 
 ## SQL file
 The SQL file was provided by udacity as part of the project course material.
-Download the SQL file from [news data] (https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
+Download the SQL file from [news data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 
 ## Acknowledgments:
 - Providing course and mentorship - [Udacity](https://in.udacity.com/).
