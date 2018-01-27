@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import psycopg2
 
 DATABASE = "news"
@@ -6,7 +8,7 @@ queries = [
         "title": "1. What are the most popular three articles of all time?",
         "query": "select articles.title, count(*) as views "
                  "from articles,log where log.path like "
-                 "concat('%', articles.slug, '%') "
+                 "concat('/article/', articles.slug, '%') "
                  "and log.status like '%200%' "
                  "group by articles.title, log.path "
                  "order by views desc limit 3;",
